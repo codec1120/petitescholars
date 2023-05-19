@@ -6,7 +6,7 @@ First, clone a fresh copy of the repository.
 
 ```bash
 
-git clone git@github.com:jantinnerezo/petitescholars-system.git
+git clone https://person_access_token@github.com/codec1120/petitescholars.git
 
 ```
 
