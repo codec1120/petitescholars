@@ -1,0 +1,94 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+[x-cloak] {
+  display: none;
+}
+
+.handbooktable,
+.handbooktable th,
+.handbooktable td {
+  border: 1px solid #000000;
+  word-break: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  width: 100%;
+}
+
+input:disabled, input.disabled {
+  /* border-color: white; */
+  box-shadow: 0 1px 2px 0 rgb(255 255 255 / 5%);
+  pointer-events: none;
+}
+
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #68D391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68D391;
+}
+
+/* Desktop and Tablet viewport */
+@media (min-width:600px)  { 
+  .btnSameWidth {
+      width: 207px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+}
+@media (min-width:801px)  { 
+  .btnSameWidth {
+      width: 207px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+}
+@media (min-width:1025px) { 
+  .btnSameWidth {
+      width: 207px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+}
+@media (min-width:1281px) { 
+  .btnSameWidth {
+      width: 207px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+  }
+}
+/* Mobile View Port */
+@media (min-width:320px)  {
+  .btnSameWidth {
+      width: 163px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      height: 37px;
+  }
+}
+@media (min-width:480px)  {
+  .btnSameWidth {
+      width: 163px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      height: 37px;
+  }
+}
